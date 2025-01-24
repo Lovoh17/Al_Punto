@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Al Punto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Sección de Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center space-x-2">
+                    <!-- Aquí se agrega el logo -->
+                    <img src="/logo2.png" alt="Logo" class="h-8 w-8">
+                    <a href="#" class="text-2xl font-bold text-teal-600">Restaurante Al Punto</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#menu" class="text-gray-700 hover:text-teal-600">Menú</a>
+                    <a href="#acerca" class="text-gray-700 hover:text-teal-600">Acerca de Nosotros</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-teal-600">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none" id="menu-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Hero -->
+    <header class="relative bg-cover bg-center h-[600px]" style="background-image: url('https://via.placeholder.com/1920x1080');">
+        <div class="absolute inset-0 bg-teal-600 bg-opacity-50"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center text-center h-full text-white px-4">
+            <h1 class="text-5xl font-bold tracking-wide">Bienvenidos a Restaurante Al Punto</h1>
+            <p class="mt-6 text-lg max-w-2xl">
+                Saborea deliciosos platillos y disfruta de una experiencia gastronómica inigualable.
+            </p>
+            <a href="#menu" class="mt-8 bg-white text-teal-600 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-200 transition-all">
+                Explora Nuestro Menú
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección de Menú -->
+    <section id="menu" class="py-16 bg-gray-100">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-teal-700">Nuestro Menú</h2>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                Descubre nuestras combinaciones y aperitivos hechos con ingredientes frescos.
+            </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 px-6 md:px-16">
+            <!-- Combinaciones -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="/hamburgesa.jpg" alt="Combinaciones" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold text-white bg-teal-500 py-4 text-center">Combinaciones</h3>
+                <ul class="p-6 text-gray-700">
+                    <li class="py-2 border-b">Combo Hamburguesa Grande</li>
+                    <li class="py-2 border-b">Combo Hamburguesa Mediana</li>
+                    <li class="py-2">Combo Hamburguesa Pequeña</li>
+                </ul>
+            </div>
+            <!-- Aperitivos -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="/Pan de Ajo.png" alt="Aperitivos" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold text-white bg-teal-500 py-4 text-center">Aperitivos</h3>
+                <ul class="p-6 text-gray-700">
+                    <li class="py-2 border-b">Aros de Cebolla Crujientes</li>
+                    <li class="py-2 border-b">Pan de Ajo con Queso</li>
+                    <li class="py-2">Alitas de Pollo</li>
+                </ul>
+            </div>
+            <!-- Acompañantes -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="/patpas_fritas.webp" alt="Acompañantes" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold text-white bg-teal-500 py-4 text-center">Acompañantes</h3>
+                <ul class="p-6 text-gray-700">
+                    <li class="py-2 border-b">Papas Fritas</li>
+                    <li class="py-2 border-b">Papas Fritas Dulces</li>
+                    <li class="py-2">Ensalada de Col</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Acerca de Nosotros -->
+    <section id="acerca" class="py-16 bg-teal-50">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-teal-700">Acerca de Nosotros</h2>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                En Restaurante Al Punto, nos apasiona ofrecerte una experiencia gastronómica única. Con platillos creados con ingredientes frescos y un ambiente acogedor, cada comida es una celebración.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-16 bg-teal-50">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-teal-700">Contacto</h2>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                ¿Tienes preguntas o necesitas hacer una reservación? ¡Contáctanos hoy mismo!
+            </p>
+        </div>
+        <div class="mt-8 max-w-2xl mx-auto">
+            <form class="bg-white shadow-md rounded-lg p-8">
+                <div class="mb-6">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                    <input type="text" id="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                    <input type="email" id="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                    <textarea id="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-teal-600 text-white py-3 px-6 rounded-md hover:bg-teal-700 transition">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#264653] text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sobre Nosotros</h3>
+                    <p class="text-sm leading-relaxed">
+                        Restaurante Al Punto ofrece una experiencia culinaria única, con sabores frescos y auténticos, combinados con un ambiente cálido y acogedor.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#menu" class="hover:text-[#F4A261] transition-colors">Menú</a></li>
+                        <li><a href="#acerca" class="hover:text-[#F4A261] transition-colors">Acerca de Nosotros</a></li>
+                        <li><a href="#contacto" class="hover:text-[#F4A261] transition-colors">Contacto</a></li>
+                        <li><a href="#" class="hover:text-[#F4A261] transition-colors">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-white hover:text-[#F4A261] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l-7 7m7-7l7 7" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-[#F4A261] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.36 6.64c-1.18-1.18-3.12-1.18-4.3 0L12 8.56l-2.06-2.06c-1.18-1.18-3.12-1.18-4.3 0-1.18 1.18-1.18 3.12 0 4.3L12 15.12l6.36-6.36c1.18-1.18 1.18-3.12 0-4.3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-[#F4A261] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2zM8 3h8a1 1 0 011 1v16a1 1 0 01-1 1H8a1 1 0 01-1-1V4a1 1 0 011-1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle menu for mobile
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:hidden');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
