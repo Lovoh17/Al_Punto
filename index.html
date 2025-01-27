@@ -19,7 +19,7 @@
                     <a href="#" class="text-2xl font-bold text-teal-600">Restaurante Al Punto</a>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#menu" class="text-gray-700 hover:text-teal-600">Menú</a>
+                    <a href="menu.html" class="text-gray-700 hover:text-teal-600">Menú</a>
                     <a href="#acerca" class="text-gray-700 hover:text-teal-600">Acerca de Nosotros</a>
                     <a href="#contacto" class="text-gray-700 hover:text-teal-600">Contacto</a>
                 </div>
@@ -170,11 +170,11 @@
     </footer>
 
     <script>
-        // Toggle menu for mobile
-        document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('menu-toggle').addEventListener('click', () => {
             const menu = document.querySelector('.md\\:hidden');
             menu.classList.toggle('hidden');
         });
+        
     </script>
 </body>
 </html>

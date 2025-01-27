@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Restaurante Al Punto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5EEDC] font-sans">
+    <!-- Sección de Navbar -->
+    <nav class="bg-[#2A9D8F] shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-white">Restaurante Al Punto</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-[#F4A261]">Inicio</a>
+                    <a href="#menu" class="text-white hover:text-[#F4A261]">Menú</a>
+                    <a href="#contacto" class="text-white hover:text-[#F4A261]">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Menú -->
+    <section id="menu" class="py-16">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-[#E76F51]">Nuestro Menú</h2>
+            <p class="text-[#264653] mt-4 max-w-2xl mx-auto">
+                Explora nuestras deliciosas opciones preparadas con ingredientes frescos y de la más alta calidad.
+            </p>
+        </div>
+
+        <!-- Categorías del Menú -->
+        <div class="mt-12 px-6 md:px-16">
+            <h3 class="text-2xl font-bold text-[#2A9D8F]">Entradas</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Ensalada César" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Ensalada César</h3>
+                        <p class="mt-2 text-[#264653]">Lechuga fresca, crutones crujientes y aderezo César casero.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$8.50</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Tacos de Carnitas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Tacos de Carnitas</h3>
+                        <p class="mt-2 text-[#264653]">Tortillas suaves rellenas de carnitas jugosas y pico de gallo.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$9.25</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Sopa de Mariscos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Sopa de Mariscos</h3>
+                        <p class="mt-2 text-[#264653]">Exquisita sopa con camarones, pescado y almejas.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$14.75</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-[#2A9D8F] mt-12">Platos Principales</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Hamburguesa Especial" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Hamburguesa Especial</h3>
+                        <p class="mt-2 text-[#264653]">Jugosa hamburguesa con carne 100% res, queso derretido y vegetales frescos.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$12.99</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Pizza Margarita" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Pizza Margarita</h3>
+                        <p class="mt-2 text-[#264653]">Deliciosa pizza con queso mozzarella, tomate fresco y albahaca.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$10.99</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Pollo a la Parrilla" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Pollo a la Parrilla</h3>
+                        <p class="mt-2 text-[#264653]">Jugoso pollo a la parrilla servido con verduras salteadas.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$13.50</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Churrasco" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Churrasco</h3>
+                        <p class="mt-2 text-[#264653]">Corte de res a la parrilla acompañado de puré de papas y chimichurri.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$16.99</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Spaghetti a la Boloñesa" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Spaghetti a la Boloñesa</h3>
+                        <p class="mt-2 text-[#264653]">Pasta al dente cubierta con salsa boloñesa casera y queso parmesano.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$11.75</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Ravioles de Espinaca" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Ravioles de Espinaca</h3>
+                        <p class="mt-2 text-[#264653]">Pasta rellena de espinaca y ricotta bañada en salsa de tomate.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$12.50</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-[#2A9D8F] mt-12">Acompañamientos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Puré de Papas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Puré de Papas</h3>
+                        <p class="mt-2 text-[#264653]">Cremoso puré de papas con un toque de mantequilla.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$5.50</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Vegetales Salteados" class="w-full h-48 object-cover">
+                    <div class="p-6
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Vegetales Salteados</h3>
+                        <p class="mt-2 text-[#264653]">Una mezcla de vegetales frescos salteados con especias.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$6.00</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Arroz Pilaf" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Arroz Pilaf</h3>
+                        <p class="mt-2 text-[#264653]">Arroz aromático cocido con especias y vegetales.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$5.75</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Pan de Ajo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Pan de Ajo</h3>
+                        <p class="mt-2 text-[#264653]">Rebanadas de pan tostado con ajo y mantequilla.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$4.99</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Papas Fritas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Papas Fritas</h3>
+                        <p class="mt-2 text-[#264653]">Papas crujientes y doradas, ideales para compartir.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$4.50</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Ensalada Mixta" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#2A9D8F]">Ensalada Mixta</h3>
+                        <p class="mt-2 text-[#264653]">Ensalada fresca con una variedad de vegetales de temporada.</p>
+                        <p class="mt-4 font-bold text-[#E76F51]">$6.25</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#264653] text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sobre Nosotros</h3>
+                    <p class="text-sm leading-relaxed">
+                        Restaurante Al Punto ofrece una experiencia culinaria única, con sabores frescos y auténticos, combinados con un ambiente cálido y acogedor.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#menu" class="hover:text-[#F4A261] transition-colors">Menú</a></li>
+                        <li><a href="#acerca" class="hover:text-[#F4A261] transition-colors">Acerca de Nosotros</a></li>
+                        <li><a href="#contacto" class="hover:text-[#F4A261] transition-colors">Contacto</a></li>
+                        <li><a href="#" class="hover:text-[#F4A261] transition-colors">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-white hover:text-[#F4A261] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l-7 7m7-7l7 7" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-[#F4A261] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.36 6.64c-1.18-1.18-3.12-1.18-4.3 0L12 8.56l-2.06-2.06c-1.18-1.18-3.12-1.18-4.3 0-1.18 1.18-1.18 3.12 0 4.3L12 15.12l6.36-6.36c1.18-1.18 1.18-3.12 0-4.3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-[#F4A261] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2zM8 3h8a1 1 0 011 1v16a1 1 0 01-1 1H8a1 1 0 01-1-1V4a1 1 0 011-1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
